@@ -38,4 +38,15 @@ describe("Cambio de Efectivo", () => {
     const resultado = document.querySelector("#resultado-div");
     expect(resultado.innerHTML).toEqual("Monto Insuficiente");
   });
+  it("Si el monto de venta es 10 y el efectivo es de 10 debe mostrar un cambio de 0 Bs", () => {
+    const valorVenta = document.querySelector("#Monto-venta");
+    valorVenta.value=10;
+    const valorEfectivo = document.querySelector("#Efectivo");    
+    valorEfectivo.value=10
+    const botonAdivinar = document.querySelector("#boton-adivinar");
+    botonAdivinar.click();
+
+    const resultado = document.querySelector("#resultado-div");
+    expect(resultado.innerHTML).toEqual("0");
+  });
 });
