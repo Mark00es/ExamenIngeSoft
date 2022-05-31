@@ -1,4 +1,4 @@
-import sumar from "./sumador";
+import sumar from "./restador";
 
 const first = document.querySelector("#Monto-venta");
 const second = document.querySelector("#Efectivo");

@@ -3,7 +3,7 @@ describe("Cambio de Efectivo", () => {
   beforeAll(() => {
     document.body.innerHTML = fs.readFileSync("index.html", "utf8");
     require("./presenter.js");
-  });
+  });  
   it("Si el monto de venta es 85 y el efectivo es de 90 debe mostrar un cambio de 5 Bs", () => {
     const valorVenta = document.querySelector("#Monto-venta");
     valorVenta.value=85;
