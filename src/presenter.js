@@ -10,6 +10,9 @@ form.addEventListener("submit", (event) => {
 
   const firstNumber = Number.parseInt(first.value);
   const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = secondNumber-firstNumber;
+  let respuesta = secondNumber-firstNumber;
+  if(respuesta<0){
+    respuesta = "Monto Insuficiente"
+  }
+  div.innerHTML = respuesta  
 });
