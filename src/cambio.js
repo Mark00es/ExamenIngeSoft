@@ -6,7 +6,12 @@ class cambio{
         return this.valor
     }        
     cambioMonedas(){
-        return this.valor
+        let vectorResultante = []
+        for(let cambio = 0;cambio<=this.valor;cambio = cambio + cambio){
+            cambio = this.valor;
+            vectorResultante.push(cambio)            
+        }        
+        return vectorResultante        
     } 
 }
 export default cambio;
