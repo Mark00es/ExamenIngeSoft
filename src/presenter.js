@@ -1,4 +1,4 @@
-import sumar from "./restador";
+import Restar from "./restador";
 
 const first = document.querySelector("#Monto-venta");
 const second = document.querySelector("#Efectivo");
@@ -10,9 +10,6 @@ form.addEventListener("submit", (event) => {
 
   const firstNumber = Number.parseInt(first.value);
   const secondNumber = Number.parseInt(second.value);
-  let respuesta = secondNumber-firstNumber;
-  if(respuesta<0){
-    respuesta = "Monto Insuficiente"
-  }
+  let respuesta = Restar(secondNumber,firstNumber);  
   div.innerHTML = respuesta  
 });
