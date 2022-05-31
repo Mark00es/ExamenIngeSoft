@@ -5,6 +5,9 @@ class cambio{
     valorIngresado(){
         return this.valor
     }        
+    cambioMonedas(){
+        return this.valor
+    } 
 }
 export default cambio;
   

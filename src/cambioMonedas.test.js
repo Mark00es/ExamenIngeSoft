@@ -8,4 +8,8 @@ describe("Restar", () => {
         const valor = new cambio(32);
         expect(valor.valorIngresado()).toEqual(32);
     });
+    it("Si el monto es 5 Bs debe mostrar que puede devolver 5", () => {
+        const valor = new cambio(5);
+        expect(valor.cambioMonedas()).toEqual(5);
+    });
   });
