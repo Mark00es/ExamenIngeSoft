@@ -1,9 +1,11 @@
-import cambioMonedas from "./cambioMonedas.js"
+import cambio from "./cambio"
 describe("Restar", () => {
     it("Si el monto es 19 Bs debe mostrar ese valor", () => {
-      expect(cambioMonedas(19)).toEqual(19);
+        const valor = new cambio(19);        
+        expect(valor.valorIngresado()).toEqual(19);
     });    
     it("Si el monto es 32 Bs debe mostrar ese valor", () => {
-        expect(cambioMonedas(32)).toEqual(32);
-      });    
+        const valor = new cambio(32);
+        expect(valor.valorIngresado()).toEqual(32);
+    });
   });

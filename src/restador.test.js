@@ -7,4 +7,7 @@ describe("Restar", () => {
   it("deberia restar 3 y 5 y mostrar 1", () => {
     expect(restar(3, 5)).toEqual("Monto Insuficiente");
   });
+  it("deberia restar 8 y 5 y mostrar 1", () => {
+    expect(restar(8, 5)).toEqual(3);
+  });
 });
